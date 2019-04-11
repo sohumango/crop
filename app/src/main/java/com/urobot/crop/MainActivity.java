@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode != REQUEST_CAMERA) {
             return;
         }
-
         // カメラパーミッションの使用が許可された
         if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             // カメラの表示
