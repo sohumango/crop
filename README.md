@@ -5,7 +5,7 @@
 # change:
   ## 1. add button for start camera.
 
-        ```java
+```java
             Button btn = findViewById(R.id.button2);
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -13,9 +13,11 @@
                     openCamera();
                 }
             });
-        ```
+```
+
   ## 2. add permisson checek.
-        ```java
+
+```java
         private void requestCameraPermission() {
             if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                 return;
@@ -41,4 +43,4 @@
                 return;
             }
         }
-        ```
+ ```
